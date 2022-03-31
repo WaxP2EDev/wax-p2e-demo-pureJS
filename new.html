@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+#myVideo {
+    
+    width: 100%;
+    height: 60vh;
+    
+
+  }
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+ 
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+</style>
+</head>
+<body>
+
+<h2>Button on Image</h2>
+<p>Add a button to an image:</p>
+
+<div class="container">
+  <img src="img_snow.jpg" alt="Snow" style="width:100%">
+  <video autoplay muted loop id="myVideo">
+    <source src="assets/main.mp4" type="video/mp4">
+</video>
+<div style="display: flex;" class="content">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="nftimg" id = "selectNFT1" onclick="openModal()"><i class="fa fa-plus"></i></div>
+        </div>
+        <div class="col-lg-4">
+            <div class="nftimg" onclick="openModal()"><i class="fa fa-plus"></i></div>
+        </div>
+        <div class="col-lg-4">
+            <div class="nftimg" onclick="openModal()"><i class="fa fa-plus"></i></div>
+        </div>
+    </div>
+    
+    
+</div>
+</div>
+
+</body>
+</html>

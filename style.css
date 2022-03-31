@@ -1,0 +1,210 @@
+#maindiv{
+    width: 100%;
+    height: 100vh;
+    /* height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 20px; */
+}
+
+.nftimg{
+
+    transform: scale(0.9,0.9);
+    margin: auto;
+    max-width: 200px;
+    max-height: 270px;
+    width: 33%;
+    height: 100%;
+    min-height: 240px;
+    min-width: 170px;
+    /* min-height: 100px; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 2px solid white;
+    background-color: grey;
+    opacity: 0.8;
+    z-index: 1;
+
+}
+.wax-main {
+}
+#autologin {
+  display: flex;
+  overflow-x: auto;
+}
+.fa-plus {
+    margin-top: 60%;
+    margin-left: 45%;
+    font-size: 30px!important;
+
+}
+.nftimg:hover{
+    border: 1px solid red;
+    transition-duration: 1s;
+    transform: scale(0.9,0.9);
+}
+.section {
+    width: 100%;
+}
+#tablecontainer {
+    border: 1px solid black;
+    background: url("./assets/cardframe.png");
+    width: auto;
+    height: auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.itemwrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+}
+#myVideo {
+    width: 100vw;
+  height: 100vh;
+margin: auto;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+
+  }
+  #content {
+    position: fixed;
+
+    color: #f1f1f1;
+    width: 100%;
+    margin-top: 60vh;
+    padding-right: 20px;
+    justify-content: center;
+  }
+  #myTimerId, #btn-back {
+      margin: auto;
+      margin-top: 40px;
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #btn-claim{
+    /* position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
+    margin: auto;
+    /* margin-bottom: 0; */
+    width: 58%;
+    z-index: 10;
+    margin-top: 100%;
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+    .modal-wrapper {
+        display: none;
+    }
+  .selectNFT {
+    width:11%; 
+    height: 300px; 
+    border: 2px solid grey;
+    margin-left: 20px; 
+    z-index: 1;
+  }
+  .modal-background {
+    /* modal background fixed across whole screen */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  
+    /* semi-transparent black  */
+    background: rgba(45, 142, 243, 0.2);
+  
+    /* z-index must be below .jw-modal and above everything else  */
+    z-index: 900;
+  }
+  .content {
+      width: 70%;
+      margin: auto;
+  }
+  .modal {
+    /* modal container */
+    position: absolute;
+    width: 1366px;
+    height: 659px;
+    left: 0px;
+    top: 110px;
+    display: block!important;
+    /* z-index must be higher than .jw-modal-background */
+    z-index: 1000;
+  
+    /* enables scrolling for tall modals */
+  }
+  
+  .modal-body {
+      margin: auto;
+    width: 62%;
+    height: 33%;
+    top: 34%;
+    color: white;
+    padding: 20px;
+    padding: 20px;
+    background: #9c9b92;
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.32);
+    border-radius: 8px;
+  }
+  #count_timer{
+    display: none;
+    flex-direction: row;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    z-index: 100;
+  }
+   #count_timer div{
+   color: white;
+   margin-left: 20px;
+  }
+  #count_timer div:first-child{
+      margin-right: 20px;
+  } 
+  .victor {
+      margin-top: -100px;
+    margin-left: 11px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .soliders {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 100;
+  }
+  body.modal-open {
+    /* body overflow is hidden to hide main scrollbar when modal window is open */
+    overflow: hidden;
+  }
